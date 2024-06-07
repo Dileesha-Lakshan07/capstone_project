@@ -19,6 +19,7 @@ class _loginState extends State<login> {
               _header(context),
               _inputFeild(context),
               _elevateButton(context),
+              _signUp(context),
             ]
         ),
       ),
@@ -81,6 +82,16 @@ class _loginState extends State<login> {
             padding: MaterialStateProperty.all(EdgeInsets.symmetric(vertical: 10)) ,
           ),
         ),
+      ],
+    );
+  }
+
+  _signUp(context){
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Text("Don't have aan account?",style: TextStyle(fontSize: 18),),
+        TextButton(onPressed: (){}, child:Text("Sign Up")),
       ],
     );
   }

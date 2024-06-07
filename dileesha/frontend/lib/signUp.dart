@@ -18,7 +18,9 @@ class _signUpState extends State<signUp> {
             children: [
               _header(context),
               _inputFeild(context),
+              _forgotPassword(context),
               _elevateButton(context),
+              _signUp(context),
             ]
         ),
       ),
@@ -96,6 +98,12 @@ class _signUpState extends State<signUp> {
     );
   }
 
+  _forgotPassword(context){
+    return TextButton(onPressed:(){}, child: const Text("Forgot Password ?"),
+      style: ButtonStyle(foregroundColor: MaterialStateProperty.all(Colors.black)),);
+  }
+
+
   _elevateButton(context){
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -108,6 +116,16 @@ class _signUpState extends State<signUp> {
             padding: MaterialStateProperty.all(EdgeInsets.symmetric(vertical: 10)) ,
           ),
         ),
+      ],
+    );
+  }
+
+  _signUp(context){
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Text("Allready have an account?",style: TextStyle(fontSize: 18),),
+        TextButton(onPressed: (){}, child:Text("Sign In")),
       ],
     );
   }
