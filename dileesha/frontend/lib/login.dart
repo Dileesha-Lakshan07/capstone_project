@@ -16,6 +16,7 @@ class _loginState extends State<login> {
         padding: const EdgeInsets.all(30),
         child: Column(
             children: [
+              _signInPic(context),
               _header(context),
               _inputFeild(context),
               _elevateButton(context),
@@ -24,6 +25,15 @@ class _loginState extends State<login> {
         ),
       ),
     ),
+    );
+  }
+
+  _signInPic(context){
+    return Container(
+      child: const Image(image: AssetImage("assets/loginAndSignin/signin.png"),
+        width: 250,
+        height: 250,
+      ),
     );
   }
 
