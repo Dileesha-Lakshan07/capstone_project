@@ -19,7 +19,6 @@ class _signUpState extends State<signUp> {
               _signupImage(context),
               _header(context),
               _inputFeild(context),
-              _forgotPassword(context),
               _elevateButton(context),
               _signUp(context),
             ]
@@ -108,11 +107,6 @@ class _signUpState extends State<signUp> {
         SizedBox(height: 30,)
       ],
     );
-  }
-
-  _forgotPassword(context){
-    return TextButton(onPressed:(){}, child: const Text("Forgot Password ?"),
-      style: ButtonStyle(foregroundColor: MaterialStateProperty.all(Colors.black)),);
   }
 
 
