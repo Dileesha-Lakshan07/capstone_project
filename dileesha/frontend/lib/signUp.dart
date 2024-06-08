@@ -20,7 +20,7 @@ class _signUpState extends State<signUp> {
               _header(context),
               _inputFeild(context),
               _elevateButton(context),
-              _signUp(context),
+              _signIn(context),
             ]
         ),
       ),
@@ -126,7 +126,7 @@ class _signUpState extends State<signUp> {
     );
   }
 
-  _signUp(context){
+  _signIn(context){
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
