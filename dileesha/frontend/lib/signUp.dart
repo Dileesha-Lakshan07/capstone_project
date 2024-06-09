@@ -21,6 +21,7 @@ class _signUpState extends State<signUp> {
               _inputFeild(context),
               _elevateButton(context),
               _signIn(context),
+              _otherConnect(context),
             ]
         ),
       ),
@@ -135,5 +136,21 @@ class _signUpState extends State<signUp> {
       ],
     );
   }
+
+  _otherConnect(context){
+    return Column(
+      children: <Widget>[
+        Text("Or Connect With",style: TextStyle(fontSize: 18)),
+
+        Row(mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            IconButton(onPressed: (){}, icon: Image(image: AssetImage("assets/loginAndSignin/google.png")),padding: EdgeInsets.zero,),
+            IconButton(onPressed: (){}, icon: Image(image: AssetImage("assets/loginAndSignin/facebook.png")),),
+          ],
+        ),
+      ],
+    );
+  }
+
 }
 

@@ -22,6 +22,7 @@ class _loginState extends State<login> {
               _forgotPassword(context),
               _elevateButton(context),
               _signUp(context),
+              _otherConnect(context),
             ]
         ),
       ),
@@ -108,6 +109,21 @@ class _loginState extends State<login> {
       children: <Widget>[
         Text("Don't have aan account?",style: TextStyle(fontSize: 18),),
         TextButton(onPressed: (){}, child:Text("Sign Up")),
+      ],
+    );
+  }
+
+  _otherConnect(context){
+    return Column(
+      children: <Widget>[
+        Text("Or Connect With",style: TextStyle(fontSize: 18)),
+
+        Row(mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            IconButton(onPressed: (){}, icon: Image(image: AssetImage("assets/loginAndSignin/google.png")),padding: EdgeInsets.zero,),
+            IconButton(onPressed: (){}, icon: Image(image: AssetImage("assets/loginAndSignin/facebook.png")),),
+          ],
+        ),
       ],
     );
   }
