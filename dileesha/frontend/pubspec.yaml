@@ -63,6 +63,10 @@ flutter:
      - assets/loginAndSignin/signin.png
      - assets/loginAndSignin/google.png
      - assets/loginAndSignin/facebook.png
+     - assets/userProfile/cat.png
+     - assets/userProfile/dog.png
+     - assets/userProfile/fish.png
+     - assets/userProfile/rabbit.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

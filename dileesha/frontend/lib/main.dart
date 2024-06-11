@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frontend/petRegistration.dart';
 import 'login.dart';
 
 void main(){
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: "my app",
-      home: login(),
+      home: petRegistration(),
     );
   }
 }
