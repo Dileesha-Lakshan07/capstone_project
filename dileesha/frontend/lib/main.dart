@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:frontend/signUp.dart';
 import 'login.dart';
 
 void main(){
