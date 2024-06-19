@@ -1,8 +1,7 @@
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
-class photo extends StatelessWidget {
-  photo({Key? key}) : super(key: key);
+class HomePage extends StatelessWidget {
+  HomePage({Key? key}) : super(key: key);
 
   // List of image paths
   List<String> imageList = [
@@ -15,12 +14,12 @@ class photo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color(0xffE2CC92),
       appBar: AppBar(
         //App Bar
         title: const Text(
           "Home Page",
-          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
         ),
         leading: IconButton(
           //Leading Icon
@@ -28,7 +27,6 @@ class photo extends StatelessWidget {
           icon: const Icon(
             Icons.arrow_back,
             size: 32,
-            color: Colors.white,
           ),
         ),
         actions: [
@@ -38,17 +36,15 @@ class photo extends StatelessWidget {
             icon: const Icon(
               Icons.account_circle,
               size: 36,
-              color: Colors.white,
             ),
-          ), // 
+          ), //
         ],
-        backgroundColor: const Color.fromARGB(255, 31, 172, 156),
+        backgroundColor: const Color(0xffFFB03E),
       ),
       body: Padding(
         padding: const EdgeInsets.all(30),
         child: GridView.builder(
-          itemCount:
-              imageList.length, 
+          itemCount: imageList.length,
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             crossAxisSpacing: 20,
@@ -61,40 +57,44 @@ class photo extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
                 image: DecorationImage(
                   image: AssetImage(imageList[index]),
-                  fit: BoxFit.cover, 
+                  fit: BoxFit.cover,
                 ),
               ),
             );
           },
         ),
       ),
-      bottomNavigationBar: CurvedNavigationBar(
-        backgroundColor: Colors.transparent,
-        buttonBackgroundColor: const Color.fromARGB(255, 31, 172, 156),
-        color: const Color.fromARGB(255, 31, 172, 156),
-        animationDuration: const Duration(milliseconds: 420),
-        items: const [
-          Icon(
-            Icons.home_outlined,
-            size: 35,
-            color: Colors.white,
-          ),
-          Icon(
-            Icons.shopping_cart_checkout,
-            size: 35,
-            color: Colors.white,
-          ),
-          Icon(
-            Icons.group_add_rounded,
-            size: 35,
-            color: Colors.white,
-          ),
-          Icon(
-            Icons.account_circle_rounded,
-            size: 35,
-            color: Colors.white,
-          ),
-        ],
+      bottomNavigationBar: Theme(
+        data: Theme.of(context).copyWith(
+          canvasColor: const Color(
+              0xffFFB03E), // Background color for the navigation bar
+        ),
+        child: BottomNavigationBar(
+          currentIndex: 0,
+          selectedItemColor: Colors.black,
+          unselectedItemColor: Colors.black,
+          showSelectedLabels: false,
+          showUnselectedLabels: false,
+          iconSize: 35,
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: 'Home',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.shopping_cart),
+              label: 'Cart',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.people),
+              label: 'People',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.account_circle),
+              label: 'Account',
+            ),
+          ],
+        ),
       ),
     );
   }
