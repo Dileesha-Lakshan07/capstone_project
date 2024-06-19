@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: "Pet care App",
-        home: load(width: width, height: height, progress: progress));
+        home: load(),
+        );
   }
 }
