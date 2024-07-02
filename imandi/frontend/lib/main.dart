@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:frontend/pages/Community_page.dart';
+import 'package:frontend/pages/community_page.dart';
 import 'package:frontend/pages/homepage.dart';
 import 'package:frontend/pages/loading.dart';
 
@@ -12,10 +12,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Pet care App",
-      home: CommunityPage(),
+      home: HomePage(),
     );
   }
 }
