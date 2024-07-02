@@ -41,15 +41,20 @@ class _signUpState extends State<signUp> {
   }
 
   _header(context) {
-    return Column(
-      children: <Widget>[
-        Text("Register",
-            style: TextStyle(fontSize: 40, fontWeight: FontWeight.w900),
-            textAlign: TextAlign.left),
-        Text("Please Register Into Continue",
-          textAlign: TextAlign.left,
-          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-      ],
+    return Container(
+      width: 600,
+      padding: EdgeInsets.all(10),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Text("Register",
+              style: TextStyle(fontSize: 40, fontWeight: FontWeight.w900),
+              textAlign: TextAlign.left),
+          Text("Please Register Into Continue",
+            textAlign: TextAlign.left,
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+        ],
+      ),
     );
   }
 
