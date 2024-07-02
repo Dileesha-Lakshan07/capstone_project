@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:frontend/petRegistration.dart';
+import 'package:frontend/userProfile.dart';
 import 'login.dart';
 
 void main(){

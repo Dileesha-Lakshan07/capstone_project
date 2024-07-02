@@ -22,6 +22,7 @@ class _userProfileState extends State<userProfile> {
           children: <Widget>[
             _userDetail(),
             _petCategory(),
+            _petAdding(),
           ],
         ),
       ),
@@ -94,6 +95,37 @@ class _userProfileState extends State<userProfile> {
 
         ]),
         SizedBox(height: 20,),
+      ],
+    );
+  }
+
+  _petAdding(){
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Container(
+          height: 190,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(15),
+            color: Colors.amberAccent,
+            image: DecorationImage(
+                image:AssetImage("assets/userProfile/petAdd.jpg"),
+                fit: BoxFit.cover),
+            ),
+          ),
+
+        SizedBox(height: 20,),
+
+        Container(
+          height: 190,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(15),
+            color: Colors.amberAccent,
+            image: DecorationImage(
+              image:AssetImage("assets/userProfile/petAdd2.jpg"),
+              fit: BoxFit.cover,),
+          ),
+        ),
       ],
     );
   }
