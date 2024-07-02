@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class petRegistration extends StatefulWidget {
-  const petRegistration({super.key});
+class userProfile extends StatefulWidget {
+  const userProfile({super.key});
 
   @override
-  State<petRegistration> createState() => _petRegistrationState();
+  State<userProfile> createState() => _userProfileState();
 }
 
-class _petRegistrationState extends State<petRegistration> {
+class _userProfileState extends State<userProfile> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(child: Scaffold(

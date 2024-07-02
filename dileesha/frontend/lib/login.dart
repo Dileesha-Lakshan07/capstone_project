@@ -88,8 +88,13 @@ class _loginState extends State<login> {
   }
 
   _forgotPassword(context){
-    return TextButton(onPressed:(){}, child: const Text("Forgot Password ?"),
-      style: ButtonStyle(foregroundColor: MaterialStateProperty.all(Colors.black)),);
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.end,
+      children: [
+        TextButton(onPressed:(){}, child: const Text("Forgot Password ?"),
+          style: ButtonStyle(foregroundColor: MaterialStateProperty.all(Colors.black)),),
+      ],
+    );
   }
 
   _elevateButton(context){

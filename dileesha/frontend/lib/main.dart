@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: "my app",
-      home: petRegistration(),
+      home: userProfile(),
     );
   }
 }
