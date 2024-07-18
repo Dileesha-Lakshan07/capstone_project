@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'login.dart';
+
 class userProfile extends StatefulWidget {
   const userProfile({super.key});
 
@@ -14,7 +16,9 @@ class _userProfileState extends State<userProfile> {
       backgroundColor: Color.fromRGBO(229, 202, 119, 30),
       appBar: AppBar(
           backgroundColor: Colors.amber,
-          leading: IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back_rounded),)
+          leading: IconButton(onPressed: () {
+            Navigator.pop(context,login());
+          }, icon: Icon(Icons.arrow_back_rounded),)
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(30), // Optional

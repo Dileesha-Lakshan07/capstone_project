@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:frontend/pages/signUp.dart';
+import 'package:frontend/pages/userProfile.dart';
 
 class login extends StatefulWidget {
   const login({super.key});
@@ -101,7 +103,14 @@ class _loginState extends State<login> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
-        ElevatedButton(onPressed: (){}, child:Text("Sign In",style: TextStyle(fontSize: 20),),
+        ElevatedButton(onPressed: (){
+      Navigator.of(context).push(MaterialPageRoute(
+        builder: (context)
+      {
+        return userProfile();
+      }
+      ));
+        }, child:Text("Sign In",style: TextStyle(fontSize: 20),),
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all<Color>(Colors.amber),
             foregroundColor: MaterialStateProperty.all<Color>(Colors.black),
@@ -118,7 +127,13 @@ class _loginState extends State<login> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Text("Don't have aan account?",style: TextStyle(fontSize: 18),),
-        TextButton(onPressed: (){}, child:Text("Sign Up")),
+        TextButton(onPressed: (){
+          Navigator.of(context).push(MaterialPageRoute(
+              builder: (context){
+                return signUp();
+              }
+          ));
+        }, child:Text("Sign Up")),
       ],
     );
   }
