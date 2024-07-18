@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:frontend/userProfile.dart';
-import 'login.dart';
+import 'package:frontend/pages/petReg.dart';
+
 
 void main(){
   runApp(MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: "my app",
-      home: userProfile(),
+      home: petReg(),
     );
   }
 }
