@@ -1,0 +1,91 @@
+{
+    "offices": [
+        {
+            "address": "Level 35, West Tower, World Trade Center\nColombo 00100\nSri Lanka",
+            "id": "colombo-wtc",
+            "image": "https://example.com/images/colombo-wtc.jpg",
+            "lat": 6.9335,
+            "lng": 79.8480,
+            "name": "Colombo - World Trade Center",
+            "phone": "+94 11 234 5678",
+            "region": "south-asia"
+        },
+        {
+            "address": "No. 123 Galle Road\nColombo 00300\nSri Lanka",
+            "id": "colombo-galle-road",
+            "image": "https://example.com/images/colombo-galle-road.jpg",
+            "lat": 6.9271,
+            "lng": 79.8612,
+            "name": "Colombo - Galle Road",
+            "phone": "+94 11 345 6789",
+            "region": "south-asia"
+        },
+        {
+            "address": "Lake Drive, Kandy\nKandy 20000\nSri Lanka",
+            "id": "kandy",
+            "image": "https://example.com/images/kandy.jpg",
+            "lat": 7.2906,
+            "lng": 80.6337,
+            "name": "Kandy Office",
+            "phone": "+94 81 234 5678",
+            "region": "south-asia"
+        },
+        {
+            "address": "Matara Business Center\nMatara 81000\nSri Lanka",
+            "id": "matara",
+            "image": "https://example.com/images/matara.jpg",
+            "lat": 5.9495,
+            "lng": 80.5353,
+            "name": "Matara Office",
+            "phone": "+94 41 234 5678",
+            "region": "south-asia"
+        }
+    ],
+    "regions": [
+        {
+            "coords": {
+                "lat": 2.9660291,
+                "lng": 1.3271339
+            },
+            "id": "africa-middle-east",
+            "name": "Africa & Middle East",
+            "zoom": 3
+        },
+        {
+            "coords": {
+                "lat": 0.0524811,
+                "lng": 127.6560787
+            },
+            "id": "asia-pacific",
+            "name": "Asia Pacific",
+            "zoom": 3
+        },
+        {
+            "coords": {
+                "lat": 46.1352815,
+                "lng": 7.4033438
+            },
+            "id": "europe",
+            "name": "Europe",
+            "zoom": 4
+        },
+        {
+            "coords": {
+                "lat": -17.5554497,
+                "lng": -99.2316195
+            },
+            "id": "latin-america",
+            "name": "Latin America",
+            "zoom": 3
+        },
+        {
+            "coords": {
+                "lat": 45.7128252,
+                "lng": -97.1547448
+            },
+            "id": "north-america",
+            "name": "North America",
+            "zoom": 4
+        }
+    ]
+}
